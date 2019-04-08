@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "segmentio-facade": "^3.2.3"
+  }
+}
