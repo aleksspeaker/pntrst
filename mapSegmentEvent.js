@@ -16,12 +16,3 @@ const mapSegmentEvent = name => {
 }
 
 module.exports = mapSegmentEvent;
-
-
-// Signup
-// WatchVideo
-// Lead
-// Search
-// ViewCategory
-// Custom
-// [Partner-defined event]
