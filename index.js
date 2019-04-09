@@ -19,8 +19,8 @@ const evDataList = evData.filter(item => !item.includes('product_'))
 const evDataListString = evDataList.map(evDataItem => `&ed${evDataItem}`)
 const productsListString = productsList.map(product => `&ed[list_items][0]${product}`)
 
-const normUrl = new URL (`${baseUrl}/?tid=${tagID}&event=${event}${evDataListString}${productsListString}&pd[em]=${emailHash(email)}&noscript=1`)
+const normalizedUrl = new URL (`${baseUrl}/?tid=${tagID}&event=${event}${evDataListString}${productsListString}&pd[em]=${emailHash(email)}&noscript=1`)
 
-fetch(normUrl)
-	.then(response => console.log(response))
-	.catch(e => console.error(e));
+fetch(normalizedUrl)
+  .then(response => console.log(response))
+  .catch(e => console.error(e));
